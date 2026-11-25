@@ -1,0 +1,14 @@
+# Tamésco
+
+> Tamésco (cashtamesco.com) is a small referral site that helps US shoppers earn cashback, rewards points or airline miles on online purchases through Rakuten, TopCashback and Rove Miles. The links are referral links; the site owner may earn a commission or reward.
+
+- Rakuten: $50 sign-up bonus, or 5,000 Amex Membership Rewards / Bilt points, for new members after a qualifying purchase. Best for points.
+- TopCashback: no sign-up bonus, but some of the highest cashback rates online. Best for straight cashback.
+- Rove Miles: 500 bonus miles when you join. Best for travelers who want airline miles.
+
+## Pages
+
+- [Home](https://www.cashtamesco.com/): The offers, a comparison, how cashback works and FAQ ([Markdown version](https://www.cashtamesco.com/index.md))
+- [About](https://www.cashtamesco.com/about.html): Who runs the site and what it is for
+- [Contact](https://www.cashtamesco.com/contact.html): How to reach the site owner
+- [Terms & Disclosure](https://www.cashtamesco.com/terms.html): Referral disclosure, terms of use and privacy

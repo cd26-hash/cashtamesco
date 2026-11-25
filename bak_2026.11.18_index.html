@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earn Cashback and Points</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #f4f7fb;
+      color: #333;
+    }
+
+    header {
+  background: linear-gradient(135deg, #003366 0%, #0057b8 100%);
+  color: white;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  position: relative;
+  display: flex;              /* permite alinhar logo e título */
+  align-items: center;        /* centraliza verticalmente */
+  justify-content: center;    /* mantém o título centralizado */
+}
+
+header .logo {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  max-height: 90px;   /* limita altura ao cabeçalho */
+  max-width: 120px;   /* evita que fique largo demais */
+  height: auto;       /* mantém proporção */
+  width: auto;
+  object-fit: contain; /* garante que não distorça */
+}
+
+    header h1 {
+      margin: 0;
+      font-size: 1.9rem;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: -0.3px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2.5rem 1.5rem;
+    }
+
+    /* How it works */
+    .how-it-works {
+      background: #fff;
+      border: 1px solid #dde6f0;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .how-it-works h2 {
+      text-align: center;
+      color: #003366;
+      font-family: 'Poppins', sans-serif;
+      margin-top: 0;
+    }
+    .icons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .icon {
+      text-align: center;
+      flex: 1;
+      min-width: 150px;
+    }
+    .icon img {
+      width: 56px;
+      height: 56px;
+    }
+    .icon p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+
+    /* Cards grid */
+    .cards-grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    /* Card base */
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+      padding: 2.2rem 2rem 2rem;
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.14);
+    }
+    .card h2 {
+      margin: 0.8rem 0 0.5rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5rem;
+    }
+    .card p {
+      line-height: 1.6;
+      font-size: 0.97rem;
+      color: #444;
+    }
+
+    /* ─── Diagonal ribbon badge ─── */
+    .badge {
+      position: absolute;
+      top: 55px;
+      right: -40px;
+      width: 220px;
+      padding: 6px 0;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #000;
+      background-color: #FFD700 !important;
+      transform: rotate(45deg);
+      transform-origin: center center;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    /* CTA button */
+    .cta-button {
+      display: inline-block;
+      color: white;
+      padding: 0.75rem 1.8rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 1.2rem;
+      transition: all 0.2s ease-in-out;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+    }
+    .cta-button:hover {
+      opacity: 0.88;
+      transform: scale(1.04);
+    }
+
+    /* ─── Rakuten ─── */
+    .rakuten {
+      background: linear-gradient(160deg, #fff5f6 0%, #fce8ea 100%);
+      border: 1px solid #f5c6cb;
+    }
+    .rakuten h2 { color: #bf001a; }
+
+    .rakuten .cta-button { background-color: #bf001a; }
+
+    /* ─── TopCashback ─── */
+    .topcashback {
+      background: linear-gradient(160deg, #f2fbf5 0%, #daf2e3 100%);
+      border: 1px solid #b2dfc0;
+    }
+    .topcashback h2 { color: #005e35; }
+
+    .topcashback .cta-button { background-color: #007a45; }
+
+    /* Logo SVG wrapper */
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 0.5rem;
+      width: 110px;
+      height: 110px;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #003366 0%, #0057b8 100%);
+      color: rgba(255,255,255,0.8);
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.85rem;
+    }
+    footer p { margin: 0; }
+
+    @media (max-width: 720px) {
+      .cards-grid { flex-direction: column; }
+      header h1 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+    <img src="Tamesco1.png" alt="Tamésco Logo" class="logo">
+	<h1>Earn Cashback &amp; Points with Rakuten and TopCashback</h1>
+</header>
+
+<div class="container">
+
+  <!-- How it works -->
+  <div class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="icons">
+      <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/1170/1170576.png" alt="Shop online">
+        <p>Shop online and earn cashback</p>
+      </div>
+      <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Earn rewards">
+        <p>Earn points or cashback automatically</p>
+      </div>
+      <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Redeem">
+        <p>Redeem or transfer to Amex Membership Rewards or Bilt Rewards</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="cards-grid">
+
+    <!-- Rakuten Card -->
+    <div class="card rakuten">
+      <!-- Diagonal badge -->
+      <div class="badge">⭐ Best for Amex/Bilt Points</div>
+
+      <!-- Rakuten SVG logo illustration -->
+      <div class="logo-wrap">
+        <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" width="110" height="110">
+          <circle cx="55" cy="55" r="52" fill="#bf001a" opacity="0.1"/>
+          <!-- Shopping bag -->
+          <rect x="28" y="45" width="54" height="40" rx="5" fill="#bf001a"/>
+          <path d="M40 45 Q40 28 55 28 Q70 28 70 45" stroke="#bf001a" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <rect x="46" y="56" width="18" height="5" rx="2.5" fill="#fff" opacity="0.8"/>
+          <!-- Cashback coin -->
+          <circle cx="78" cy="38" r="15" fill="#ffd700" stroke="#e6a800" stroke-width="2"/>
+          <text x="78" y="43" text-anchor="middle" font-size="13" font-weight="bold" fill="#6b4000" font-family="Poppins,sans-serif">$</text>
+        </svg>
+      </div>
+
+      <h2>Rakuten</h2>
+      <p>Maximize your rewards: Use my link to claim an exclusive <strong>$50 bonus (or 5,000 Amex/Bilt points)</strong> when you join Rakuten. This is the highest referral offer currently available!</p>
+      <a href="https://www.rakuten.com/r/EHLDOU?eeid=28187" target="_blank" rel="noopener noreferrer" class="cta-button">Claim My $50 Bonus →</a>
+    </div>
+
+    <!-- TopCashback Card -->
+    <div class="card topcashback">
+      <!-- Diagonal badge -->
+      <div class="badge">💰 Best for Cashback</div>
+
+      <!-- TopCashback SVG logo illustration -->
+      <div class="logo-wrap">
+        <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" width="110" height="110">
+          <circle cx="55" cy="55" r="52" fill="#007a45" opacity="0.1"/>
+          <!-- Piggy bank body -->
+          <ellipse cx="54" cy="62" rx="26" ry="22" fill="#007a45"/>
+          <!-- Snout -->
+          <ellipse cx="78" cy="66" rx="8" ry="6" fill="#005e35"/>
+          <circle cx="76" cy="65" r="1.5" fill="#fff" opacity="0.6"/>
+          <circle cx="80" cy="65" r="1.5" fill="#fff" opacity="0.6"/>
+          <!-- Eye -->
+          <circle cx="68" cy="55" r="3" fill="#fff"/>
+          <circle cx="69" cy="55" r="1.5" fill="#003a20"/>
+          <!-- Ear -->
+          <ellipse cx="44" cy="44" rx="7" ry="9" fill="#007a45"/>
+          <ellipse cx="44" cy="44" rx="4" ry="6" fill="#56c97a"/>
+          <!-- Coin slot -->
+          <rect x="48" y="41" width="14" height="3" rx="1.5" fill="#004d2c"/>
+          <!-- Legs -->
+          <rect x="40" y="80" width="7" height="10" rx="3" fill="#005e35"/>
+          <rect x="51" y="80" width="7" height="10" rx="3" fill="#005e35"/>
+          <rect x="62" y="80" width="7" height="10" rx="3" fill="#005e35"/>
+          <!-- Coin above -->
+          <circle cx="60" cy="30" r="12" fill="#ffd700" stroke="#e6a800" stroke-width="2"/>
+          <text x="60" y="35" text-anchor="middle" font-size="11" font-weight="bold" fill="#6b4000" font-family="Poppins,sans-serif">$</text>
+        </svg>
+      </div>
+
+      <h2>TopCashback</h2>
+      <p>TopCashback consistently offers some of the <strong>highest cashback rates</strong> available online. Sign up today and keep more money in your pocket on every purchase.</p>
+      <a href="https://www.topcashback.com/ref/cedourado/?source_id=4" target="_blank" rel="noopener noreferrer" class="cta-button">Unlock Extra $10 →</a>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>Disclaimer: These are referral links. I may earn a commission if you sign up through them.</p>
+</footer>
+
+</body>
+</html>

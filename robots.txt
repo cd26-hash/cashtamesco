@@ -1,0 +1,6 @@
+# Crawl policy for www.cashtamesco.com
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+Sitemap: https://www.cashtamesco.com/sitemap.xml
