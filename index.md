@@ -1,6 +1,6 @@
 # Get Paid to Shop Online: Claim a $50 Bonus
 
-Join free and earn cashback, Amex/Bilt points or airline miles at thousands of stores.
+Join free and earn cashback, Amex/Bilt points or travel miles at thousands of stores.
 
 ## Rakuten (best for Amex/Bilt points)
 
@@ -16,7 +16,7 @@ Join free and earn cashback, Amex/Bilt points or airline miles at thousands of s
 
 ## Rove Miles (best for travel)
 
-**500 bonus miles** when you join. Earn airline miles instead of cash when you shop online.
+**500 bonus miles** when you join. Earn miles every time you shop online, then redeem them for flights or hotel stays.
 
 [Get 500 bonus miles](https://www.rovemiles.com/?signup&referralCode=HRMT9G9R)
 
@@ -29,8 +29,8 @@ Join free and earn cashback, Amex/Bilt points or airline miles at thousands of s
 ## Questions
 
 - **Is it free to join?** Yes, all three programs are free.
-- **Which one should I choose?** Rakuten for Amex/Bilt points or the bigger bonus, TopCashback for straight cash, Rove Miles for airline miles.
-- **Can I join more than one?** Yes. Each purchase earns from only one site, so compare before you buy.
+- **Which one should I choose?** Rakuten for Amex/Bilt points or the bigger bonus, TopCashback for straight cash, Rove Miles for miles you can use on flights or hotels.
+- **Can I join all three?** Yes. Each purchase earns from only one site, so compare before you buy.
 
 ---
 
