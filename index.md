@@ -1,4 +1,4 @@
-# Get Paid to Shop here: Claim a $50 Bonus
+# Get Paid to Shop Online: Claim a $50 Bonus
 
 Join free and earn cashback, Amex/Bilt points or airline miles at thousands of stores.
 
