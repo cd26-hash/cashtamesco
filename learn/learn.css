@@ -1,0 +1,66 @@
+*, *::before, *::after { box-sizing: border-box; }
+body { font-family: 'Roboto', system-ui, sans-serif; margin: 0; background: #f4f7fb; color: #333; line-height: 1.65; }
+h1, h2, h3 { font-family: 'Poppins', system-ui, sans-serif; color: #003366; line-height: 1.25; }
+a { color: #0057b8; }
+
+.topbar { background: #003366; padding: 0.6rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.topbar a { color: #fff; text-decoration: none; }
+.topbar .brand { display: inline-flex; align-items: center; gap: 0.6rem; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.1rem; }
+.topbar img { width: 46px; height: 40px; object-fit: contain; background: #fff; border-radius: 8px; padding: 2px; }
+.topbar nav { display: flex; gap: 1.1rem; font-size: 0.95rem; }
+.topbar nav a:hover { text-decoration: underline; }
+
+main.article { max-width: 780px; margin: 1.5rem auto 2.5rem; background: #fff; border: 1px solid #dde6f0; border-radius: 12px; padding: 1.5rem 2rem 2rem; }
+.crumbs { font-size: 0.85rem; color: #667; margin-bottom: 0.8rem; }
+.crumbs a { color: inherit; }
+main.article h1 { margin: 0.2rem 0 0.4rem; font-size: clamp(1.6rem, 4vw, 2.1rem); }
+main.article h2 { margin: 1.8rem 0 0.5rem; font-size: 1.3rem; }
+main.article h3 { margin: 0.6rem 0 0.3rem; font-size: 1.05rem; }
+.meta { margin: 0 0 0.8rem; font-size: 0.88rem; color: #667; }
+.lead { font-size: 1.1rem; color: #333; }
+.disclosure, .note { background: #f4f7fb; border-left: 4px solid #0057b8; padding: 0.6rem 0.9rem; font-size: 0.88rem; color: #444; border-radius: 0 6px 6px 0; }
+.small { font-size: 0.85rem; color: #666; }
+li { margin: 0.3rem 0; }
+
+.table-wrap { overflow-x: auto; }
+table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 0.95rem; }
+th, td { padding: 0.6rem; border-bottom: 1px solid #e6edf5; text-align: left; vertical-align: top; }
+thead th { font-family: 'Poppins', sans-serif; color: #003366; }
+tbody th { font-weight: 500; color: #555; }
+
+.procon { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+.procon > div { background: #f8fafd; border: 1px solid #e6edf5; border-radius: 10px; padding: 0.4rem 1rem 0.6rem; }
+.procon ul { padding-left: 1.2rem; }
+
+ol.tips { padding-left: 1.4rem; }
+ol.tips h2 { font-size: 1.1rem; margin: 1.2rem 0 0.2rem; }
+ol.tips p { margin: 0; }
+
+.faq details { border-bottom: 1px solid #e6edf5; padding: 0.7rem 0.2rem; }
+.faq summary { cursor: pointer; font-weight: 500; color: #003366; }
+.faq details p { margin: 0.5rem 0 0; }
+
+.cta-box { margin: 2rem 0 0; background: #f4f7fb; border: 1px solid #dde6f0; border-radius: 12px; padding: 1rem 1.2rem; }
+.cta-box p { margin: 0.3rem 0; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.8rem 0; }
+.btn { flex: 1 1 160px; text-align: center; color: #fff; text-decoration: none; font-family: 'Poppins', sans-serif; font-weight: 700; padding: 0.75rem 1rem; border-radius: 8px; }
+.btn[data-offer="Rakuten"] { background: #bf001a; }
+.btn[data-offer="TopCashback"] { background: #007a45; }
+.btn[data-offer="Rove Miles"] { background: #5b3fd1; }
+.btn:hover, .btn:focus-visible { filter: brightness(1.1); }
+
+.related { margin-top: 2rem; border-top: 1px solid #e6edf5; }
+.guide-list { list-style: none; padding: 0; display: grid; gap: 0.8rem; }
+.guide-list a { display: block; text-decoration: none; border: 1px solid #dde6f0; border-radius: 10px; padding: 0.9rem 1rem; color: #333; }
+.guide-list a:hover { border-color: #0057b8; background: #f8fafd; }
+.guide-list strong { display: block; color: #003366; font-family: 'Poppins', sans-serif; }
+.guide-list span { font-size: 0.92rem; color: #555; }
+
+footer { background: linear-gradient(135deg, #003366 0%, #0057b8 100%); color: rgba(255,255,255,0.85); text-align: center; padding: 1.4rem 1.2rem; font-size: 0.85rem; }
+footer p { margin: 0 auto; max-width: 760px; }
+footer nav { margin-bottom: 0.6rem; }
+footer a { color: #fff; text-decoration: none; margin: 0 0.6rem; display: inline-block; padding: 0.25rem 0; }
+
+@media (max-width: 720px) {
+  main.article { margin: 0; border-radius: 0; border-left: 0; border-right: 0; padding: 1.2rem 1rem 1.6rem; }
+}

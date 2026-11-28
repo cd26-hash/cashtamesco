@@ -150,7 +150,11 @@
     .topbar {
       background: #003366;
       padding: 0.6rem 1.25rem;
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
     }
+    .topbar nav { display: flex; gap: 1.1rem; }
+    .topbar nav a { font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 0.95rem; }
+    .topbar nav a:hover { text-decoration: underline; }
     .topbar a {
       display: inline-flex; align-items: center; gap: 0.6rem;
       color: #fff; text-decoration: none;
@@ -309,6 +313,13 @@
     .compare thead th { font-family: 'Poppins', sans-serif; color: #003366; }
     .compare tbody th { font-weight: 500; color: #555; width: 34%; }
 
+    .guides { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0.8rem; }
+    .guides a { display: block; height: 100%; text-decoration: none; border: 1px solid #dde6f0; border-radius: 10px; padding: 0.9rem 1rem; color: #444; font-size: 0.93rem; }
+    .guides a:hover, .guides a:focus-visible { border-color: #0057b8; background: #f8fafd; }
+    .guides strong { display: block; color: #003366; font-family: 'Poppins', sans-serif; font-size: 1rem; margin-bottom: 0.2rem; }
+    .guides-more { text-align: center; margin: 1rem 0 0; }
+    .guides-more a { color: #0057b8; font-weight: 500; }
+
     .faq details { border-bottom: 1px solid #e6edf5; padding: 0.9rem 0.2rem; }
     .faq summary {
       cursor: pointer; font-weight: 500; color: #003366; font-size: 1rem;
@@ -365,6 +376,10 @@
 
 <div class="topbar">
   <a href="/"><img src="logo.webp" alt="" width="46" height="40">Tamésco</a>
+  <nav aria-label="Main">
+    <a href="/learn/">Learn</a>
+    <a href="about.html">About</a>
+  </nav>
 </div>
 
 <header class="hero">
@@ -467,6 +482,18 @@
     </table></div>
   </section>
 
+  <!-- Guides -->
+  <section class="block" aria-labelledby="guides">
+    <h2 id="guides">Cashback guides</h2>
+    <ul class="guides">
+      <li><a href="/learn/what-is-cashback.html"><strong>What is cashback?</strong>Who pays it, how long it takes and why some purchases don't qualify.</a></li>
+      <li><a href="/learn/how-cashback-tracking-works.html"><strong>How tracking works</strong>Why cashback sometimes goes missing, and how to avoid it.</a></li>
+      <li><a href="/learn/rakuten-vs-topcashback.html"><strong>Rakuten vs TopCashback</strong>A side-by-side comparison, plus Rove Miles.</a></li>
+      <li><a href="/learn/cashback-tips.html"><strong>10 cashback tips</strong>Simple habits to get credited and get the best rate.</a></li>
+    </ul>
+    <p class="guides-more"><a href="/learn/">All guides, including the Rakuten and TopCashback reviews →</a></p>
+  </section>
+
   <!-- FAQ -->
   <section class="block faq" aria-labelledby="faq">
     <h2 id="faq">Questions</h2>
@@ -488,7 +515,7 @@
     </details>
     <details>
       <summary>How does cashback work?</summary>
-      <p>Stores pay these programs a commission when you shop through them. They share part of it with you as cashback, points or miles. You start at the program's site or browser extension, then shop at the store as usual.</p>
+      <p>Stores pay these programs a commission when you shop through them. They share part of it with you as cashback, points or miles. You start at the program's site or browser extension, then shop at the store as usual. <a href="/learn/what-is-cashback.html">Read the full guide</a>.</p>
     </details>
     <details>
       <summary>Why use the links on this site?</summary>
@@ -500,6 +527,7 @@
 
 <footer>
   <nav aria-label="Site">
+    <a href="/learn/">Learn</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
     <a href="terms.html">Terms &amp; Disclosure</a>

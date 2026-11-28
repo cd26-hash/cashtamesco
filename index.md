@@ -36,4 +36,4 @@ Join free and earn cashback, Amex/Bilt points or travel miles at thousands of st
 
 Disclosure: these are referral links. I may earn a commission or reward if you sign up through them, at no extra cost to you. Bonuses and rates are set by each program and can change.
 
-[About](https://www.cashtamesco.com/about.html) · [Contact](https://www.cashtamesco.com/contact.html) · [Terms & Disclosure](https://www.cashtamesco.com/terms.html)
+[Guides](https://www.cashtamesco.com/learn/) · [About](https://www.cashtamesco.com/about.html) · [Contact](https://www.cashtamesco.com/contact.html) · [Terms & Disclosure](https://www.cashtamesco.com/terms.html)

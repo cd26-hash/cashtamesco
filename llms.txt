@@ -12,3 +12,13 @@
 - [About](https://www.cashtamesco.com/about.html): Who runs the site and what it is for
 - [Contact](https://www.cashtamesco.com/contact.html): How to reach the site owner
 - [Terms & Disclosure](https://www.cashtamesco.com/terms.html): Referral disclosure, terms of use and privacy
+
+## Guides
+
+- [All guides](https://www.cashtamesco.com/learn/)
+- [What is cashback?](https://www.cashtamesco.com/learn/what-is-cashback.html): Who pays it, how it is tracked, how long payouts take, why it is declined
+- [How cashback tracking works](https://www.cashtamesco.com/learn/how-cashback-tracking-works.html): Why purchases fail to track and how to avoid it
+- [10 cashback tips](https://www.cashtamesco.com/learn/cashback-tips.html): Habits to get credited and get the best rate
+- [Rakuten vs TopCashback](https://www.cashtamesco.com/learn/rakuten-vs-topcashback.html): Side-by-side comparison, plus Rove Miles
+- [Rakuten review](https://www.cashtamesco.com/learn/rakuten-review.html): Cash or Amex/Bilt points, payouts, pros and cons
+- [TopCashback review](https://www.cashtamesco.com/learn/topcashback-review.html): Rates, withdrawals, pros and cons
